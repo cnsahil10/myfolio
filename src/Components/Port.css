@@ -1,0 +1,173 @@
+html{
+    overflow-x: hidden;
+    height: 100vh;
+    
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 17px;
+    position: relative;
+    z-index: 2;
+}
+ul{
+    display: flex;
+    text-decoration: none;
+    gap: 55px;
+}
+li::marker{
+    color: transparent;
+}
+#ui{
+    margin-top: 0px;
+}
+h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+p,h3,li{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    
+    
+}
+.verticalcolor{
+    width: 460px;
+    height: 570px;
+    background-color: rgb(238, 204, 162);
+    position: absolute;
+    overflow: hidden;
+    top: 0px;
+    left: 450px;
+    z-index: 1;
+}
+.horizontalcolor{
+    width: 100vw;
+    height: 600px;
+    background-color: rgb(243, 243, 182);
+    position: absolute;
+    overflow: visible;
+    top: 135px;
+    left: 0px;
+    margin-left: 100px;
+    
+}
+.me{
+    width: 400px;
+    font-size: 35px;
+    position: absolute;
+    z-index: 1;
+    top: 200px;
+    left: 850px;
+}
+.lorem{
+    width: 400px;
+    font-size: 15px;
+    position: absolute;
+    z-index: 1;
+    font-weight: bold;
+    top: 326px;
+    left: 860px;
+}
+u{
+    width: 400px;
+    font-size: 15px;
+    position: absolute;
+    z-index: 1;
+    font-weight: bold;
+    top: 426px;
+    left: 860px;
+    /* text-decoration: none; */
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.outline{
+    display:flex;
+    flex-wrap: wrap;
+    color: black;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 110px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    position: absolute;
+    top: 350px;
+    left: 50px;
+    z-index: 1;
+
+}
+.footer{
+    background-color: white;
+    width: 100vw;
+    height: 250px;
+    position: absolute;
+    top: 570px;
+    left: 470px;
+    z-index: 2;
+    display: flex;
+    gap: 500px;
+}
+.footer .cv{
+    position: relative;
+    z-index: 4;
+    top:-380px;
+    left:-700px;
+    
+}
+.portrait img{
+    position: absolute;
+    left: 550px;
+    top: 77px;
+    z-index: 3;
+    width: 275px;
+    max-width: 100%;
+    height: auto;
+}
+ *{
+    box-sizing: border-box;
+ }
+
+
+@media screen and (max-width:896px){
+    .nav{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 100px;
+    }
+    .verticalcolor{
+        width: 85%;
+        left: 140px;
+    }
+    .horizontalcolor{
+        width: 760px;
+        
+    }
+    .portrait img{
+        width: 70%;
+        left: 135px;
+    }
+    .desc{
+        width: 60%;
+        position: absolute;
+        top: -20px;
+        right: 590px;
+        
+    }
+    .outline{
+        top: 500px;
+
+    }
+    .footer{
+        gap: 190px;
+    }
+    .footer .cv{
+        left: -900px;
+    }
+}
